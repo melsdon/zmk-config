@@ -70,5 +70,41 @@
                                      &trans        &trans        &kp SPACE    &kp ENTER  &trans        &trans
             >;
         };
+
+        nav {
+            bindings = <
+&trans  &trans    &trans    &trans     &trans     &trans    &kp HOME  &kp PG_DN  &kp PG_UP  &kp END    &kp INS         &trans
+&trans  &kp LCMD  &kp LALT  &kp LCTRL  &kp LSHFT  &trans    &kp LEFT  &kp DOWN   &kp UP     &kp RIGHT  &kp SCROLLLOCK  &trans
+&trans  &trans    &trans    &trans     &trans     &trans    &trans    &trans     &trans     &trans     &trans          &trans
+                            &trans     &trans     &trans    &trans    &trans     &trans
+            >;
+        };
+
+        fn {
+            bindings = <
+&trans  &kp F1  &kp F2   &kp F3   &kp F4  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp F5  &kp F6   &kp F7   &kp F8  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp F9  &kp F10  &kp F11  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+                         &trans   &trans  &trans    &trans  &trans  &trans
+            >;
+        };
+
+        num {
+            bindings = <
+&trans  &trans    &trans        &trans     &trans     &trans    &kp N7     &kp N8  &kp N9        &kp KP_PLUS      &kp KP_MINUS   &trans
+&trans  &kp LCMD  &kp LEFT_ALT  &kp LCTRL  &kp LSHFT  &trans    &kp N4     &kp N5  &kp N6        &kp KP_MULTIPLY  &kp KP_DIVIDE  &trans
+&trans  &trans    &trans        &trans     &trans     &trans    &kp N1     &kp N2  &kp NUMBER_3  &kp KP_LPAR      &kp KP_RPAR    &trans
+                                &trans     &trans     &trans    &kp ENTER  &kp N0  &kp DOT
+            >;
+        };
+
+        sys {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+                        &trans  &trans  &trans    &trans  &trans  &trans
+            >;
+        };
     };
 };
