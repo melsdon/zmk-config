@@ -11,8 +11,8 @@
     combos {
         compatible = "zmk,combos";
 
-        colemak {
-            bindings = <&to 0>;
+        tog_colemak {
+            bindings = <&tog 1>;
             key-positions = <36 37 40 41>;
             timeout-ms = <175>;
             require-prior-idle-ms = <150>;
