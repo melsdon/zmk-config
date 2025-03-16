@@ -3,7 +3,6 @@
  *
  * SPDX-License-Identifier: MIT
  */
-
 /* 
  * Override default movement/scrolling max velocities.
  * https://zmk.dev/docs/keymaps/behaviors/mouse-emulation#mouse-emulation-defines
@@ -20,24 +19,144 @@
     combos {
         compatible = "zmk,combos";
 
-        toggle-colemak-dh {
+        tog-colemak-dh {
             bindings = <&tog 1>;
             key-positions = <38 39>;
         };
 
-        capslock {
+        kp-capslock {
             bindings = <&kp CAPSLOCK>;
             key-positions = <24 35>;
         };
 
-        media {
+        mo-media {
             bindings = <&mo 6>;
             key-positions = <36 37>;
         };
 
-        sys {
+        mo-sys {
             bindings = <&mo 7>;
             key-positions = <41 40>;
+        };
+
+        kp-exclamation {
+            bindings = <&kp EXCLAMATION>;
+            key-positions = <1 13>;
+        };
+
+        kp-at_sign {
+            bindings = <&kp AT_SIGN>;
+            key-positions = <2 14>;
+        };
+
+        kp-pound {
+            bindings = <&kp POUND>;
+            key-positions = <15 3>;
+        };
+
+        kp-doller {
+            bindings = <&kp DOLLAR>;
+            key-positions = <4 16>;
+        };
+
+        kp-percent {
+            bindings = <&kp PERCENT>;
+            key-positions = <5 17>;
+        };
+
+        kp-caret {
+            bindings = <&kp CARET>;
+            key-positions = <6 18>;
+        };
+
+        kp-ampersand {
+            bindings = <&kp AMPERSAND>;
+            key-positions = <7 19>;
+        };
+
+        kp-asterisk {
+            bindings = <&kp ASTERISK>;
+            key-positions = <8 20>;
+        };
+
+        kp-lpar {
+            bindings = <&kp LPAR>;
+            key-positions = <9 21>;
+        };
+
+        kp-rpar {
+            bindings = <&kp RPAR>;
+            key-positions = <10 22>;
+        };
+
+        kp_under {
+            bindings = <&kp UNDER>;
+            key-positions = <13 25>;
+        };
+
+        kp-plus {
+            bindings = <&kp PLUS>;
+            key-positions = <26 14>;
+        };
+
+        kp-lbrc {
+            bindings = <&kp LBRC>;
+            key-positions = <15 27>;
+        };
+
+        kp-rbrc {
+            bindings = <&kp RBRC>;
+            key-positions = <28 16>;
+        };
+
+        kp-pipe {
+            bindings = <&kp PIPE>;
+            key-positions = <17 29>;
+        };
+
+        kp-minus {
+            bindings = <&kp KP_MINUS>;
+            key-positions = <18 30>;
+        };
+
+        kp-equals {
+            bindings = <&kp KP_EQUAL>;
+            key-positions = <19 31>;
+        };
+
+        kp-lbkt {
+            bindings = <&kp LBKT>;
+            key-positions = <32 20>;
+        };
+
+        kp-rbkt {
+            bindings = <&kp RBKT>;
+            key-positions = <33 21>;
+        };
+
+        kp-backslash {
+            bindings = <&kp BACKSLASH>;
+            key-positions = <22 34>;
+        };
+
+        kp-tab {
+            bindings = <&kp TAB>;
+            key-positions = <1 2>;
+        };
+
+        cut {
+            bindings = <&kp LC(X)>;
+            key-positions = <25 26>;
+        };
+
+        copy {
+            bindings = <&kp LC(C)>;
+            key-positions = <26 27>;
+        };
+
+        paste {
+            bindings = <&kp LC(V)>;
+            key-positions = <27 28>;
         };
     };
 
